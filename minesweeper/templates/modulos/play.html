@@ -56,7 +56,9 @@
 function DataSend(data)
 {
 
-data.token="019b219593a2e9de94d03af1dceaa629c75de015";
+data.token="{{ token }}";
+
+
 jQuery.ajax({
   method: "POST",
   url: "/api/v1play_game/",
@@ -65,16 +67,17 @@ jQuery.ajax({
  {
       //g=eval(msg);
      alert(msg);
-     alert(10);
 
 
-  });
+
+  })
+;
 
 }
 $(document).ready(function()
 {
 
-    var CustomVarts = {'Username':'Juan','DataSend':DataSend,'Jquery':$};
+    var CustomVarts = {'Username':"{{ username }}",'DataSend':DataSend,'Jquery':$};
 	$("#board").minesweeper({"difficulty":"beginner",'CustomVars':CustomVarts});
 	
 
