@@ -1,4 +1,3 @@
-django-registration
 simplejson
 django
 dj-database-url==0.4.1
