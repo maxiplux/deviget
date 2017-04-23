@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'rest_framework',
+    'rest_framework.authtoken',
+     'import_export',
     'modulos',
     'modulos.game',
 
@@ -143,6 +145,7 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework.authentication.BasicAuthentication',
         'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
     )
 }
 ALLOWED_HOSTS=['190.159.249.74','serene-temple-36146.herokuapp.com','127.0.0.1','192.168.1.102']

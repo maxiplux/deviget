@@ -1,6 +1,7 @@
 
 from django.shortcuts import render
 from django.utils import timezone
+from django.views.decorators.csrf import csrf_exempt
 from django.views.generic import DetailView
 from django.views.generic import ListView
 from rest_framework import viewsets
@@ -76,3 +77,4 @@ class ShippingViewSet(viewsets.ModelViewSet):
     queryset = Shipping.objects.all()
     serializer_class = ShippingSerializer
     permission_classes = (PublicEndpoint,)
+

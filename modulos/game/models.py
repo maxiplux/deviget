@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
+import pyclbr
 
 from django.db import models
 
@@ -14,3 +15,9 @@ class GameResult(MaestraSimple):
 	difficulty= models.CharField(max_length=20)
 	time= models.CharField(max_length=20)
 	username= models.CharField(max_length=20)
+
+# automatic admin generate helper
+def clases():
+    for clase in pyclbr.readmodule(__name__).keys():
+        if clase not in []:
+            yield eval(clase)
