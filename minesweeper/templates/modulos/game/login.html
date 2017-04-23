@@ -177,7 +177,7 @@ copyRight to http://bootsnipp.com .</p>
 
          $('#login-submit').click(function(e)
          {
-              alert(856);
+
              username=$("#username").val();
              password=$("#password").val()+"";
 
@@ -188,11 +188,11 @@ copyRight to http://bootsnipp.com .</p>
         data: {'username':username,'password':password},
         });
 
-             alert(2);
+
     //When the request successfully finished, execute passed in function
     ajaxRequest.done(function(obj)
     {
-            obj=eval(msg);
+            obj=eval(obj);
             obj.token
             window.location.href = "/play?token="+obj.token;
 

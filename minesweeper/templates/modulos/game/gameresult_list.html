@@ -1,0 +1,30 @@
+ <table class="table table-condensed">
+    <thead>
+      <tr>
+          <th>Id Game</th>
+          <th>Play Date</th>
+        <th>cols</th>
+        <th>rows</th>
+        <th>mines</th>
+        <th>difficulty</th>
+        <th>time</th>
+        <th>username</th>
+
+      </tr>
+    </thead>
+    <tbody>
+
+    {% for game in object_list %}
+        <tr>
+            <td>{{game.id}}</td>
+            <td>{{game.creado}}</td>
+            <td>{{game.cols}}</td>
+            <td>{{game.rows}}</td>
+            <td>{{game.mines}}</td>
+            <td>{{game.difficulty}}</td>
+            <td>{{game.time}}</td>
+            <td>{{game.username}}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>

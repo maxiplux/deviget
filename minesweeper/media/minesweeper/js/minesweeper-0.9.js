@@ -400,10 +400,10 @@ function renderBoard() {
 							revealAllMines();
 							//to-do: handle new game after game ends
 							alert("You hit a mine X-(\nBetter luck next time ...\nGame time: "+addZerosToNumber(stopwatchMinutes,2) + ":" + addZerosToNumber(stopwatchSeconds,2));
-							settings.CustomVars.DataSend({"cols":450,"rows":10,"mines":5,"difficulty":"basic","time":"30","username":"pablo"});
+							settings.CustomVars.DataSend({"cols":settings.cols,"rows":settings.rows,"mines":settings.mines,"difficulty":settings.difficulty,"time":addZerosToNumber(stopwatchMinutes,2),"username":settings.CustomVars.username});
 
 							var highScores = getHighScores();
-							displayHighScores(highScores);
+							//displayHighScores(highScores);
 							return false;
 						}
 						else if (mines == 0){
@@ -652,8 +652,8 @@ function checkVictory(){
 		
 		//save high scores
 		var gameTime = addZerosToNumber(stopwatchMinutes,2) + ":" + addZerosToNumber(stopwatchSeconds,2);
-		var name = alert("Congratulation! You have found all the mines. :-)\nGame time: " + gameTime + "\n\n" + "Do you wish to save your score?\nEnter name:", "anonymous");
-		settings.CustomVars.DataSend({"cols":450,"rows":10,"mines":5,"difficulty":"basic","time":"30","username":"pablo"});
+		var name = alert("Congratulation! You have found all the mines. :-)\nGame time: " + gameTime );
+		settings.CustomVars.DataSend({"cols":settings.cols,"rows":settings.rows,"mines":settings.mines,"difficulty":settings.difficulty,"time":addZerosToNumber(stopwatchMinutes,2),"username":settings.CustomVars.username});
 		
 		var highScores = getHighScores();
 		
