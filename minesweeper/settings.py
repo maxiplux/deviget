@@ -148,7 +148,7 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
     )
 }
-ALLOWED_HOSTS=['190.159.249.74','serene-temple-36146.herokuapp.com','127.0.0.1','192.168.1.102']
+ALLOWED_HOSTS=['190.159.249.74','limitless-atoll-36041.herokuapp.com','deviget.testbox.site','127.0.0.1','192.168.1.102']
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.normpath(os.path.join(PROJECT_PATH, 'static/'))

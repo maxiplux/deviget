@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3ebc797-fa4c-47f4-97c8-fce167a953ee" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minesweeper/wsgi.py" afterPath="$PROJECT_DIR$/minesweeper/wsgi.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/minesweeper/settings.py" afterPath="$PROJECT_DIR$/minesweeper/settings.py" />
     </list>
     <ignored path="webstore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,8 +41,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/minesweeper/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.74041814">
-              <caret line="68" column="27" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.6445993">
+              <caret line="150" column="71" selection-start-line="150" selection-start-column="71" selection-end-line="150" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -121,7 +121,6 @@
         <option value="$PROJECT_DIR$/shopify/views.py" />
         <option value="$PROJECT_DIR$/minesweeper/urls.py" />
         <option value="$PROJECT_DIR$/pruebas.py" />
-        <option value="$PROJECT_DIR$/minesweeper/settings.py" />
         <option value="$PROJECT_DIR$/rest-test.py" />
         <option value="$PROJECT_DIR$/minesweeper/templates/modulos/play.html" />
         <option value="$PROJECT_DIR$/minesweeper/templates/modulos/login.html" />
@@ -131,6 +130,7 @@
         <option value="$PROJECT_DIR$/minesweeper/media/minesweeper/js/minesweeper-0.9.js" />
         <option value="$PROJECT_DIR$/minesweeper/templates/modulos/game/gameresult_list.html" />
         <option value="$PROJECT_DIR$/minesweeper/templates/modulos/game/play.html" />
+        <option value="$PROJECT_DIR$/minesweeper/settings.py" />
       </list>
     </option>
   </component>
@@ -1016,8 +1016,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/minesweeper/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.74041814">
-          <caret line="68" column="27" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.6445993">
+          <caret line="150" column="71" selection-start-line="150" selection-start-column="71" selection-end-line="150" selection-end-column="71" />
           <folding />
         </state>
       </provider>
