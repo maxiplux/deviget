@@ -1,0 +1,22 @@
+{% extends "base_generic.html" %}
+<h1>{% block title %}Order List{% endblock %}</h1>
+{% block content %}
+
+
+    {% if order_list %}
+   <ul class="list-group">
+
+      {% for order in order_list%}
+
+
+            <li class="list-group-item">
+          <a href="{% url 'order-detail' pk=order.id %}">      <span class="badge">Consultar</span></a>
+                {{ order.id }}
+            </li>
+      {% endfor %}
+
+    </ul>
+    {% else %}
+      <p>There are no Order  in this moment.</p>
+    {% endif %}
+{% endblock %}

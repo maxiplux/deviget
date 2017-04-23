@@ -1,0 +1,66 @@
+{% load static %}
+<?xml version="1.0" encoding="utf-8" ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="cs" lang="cs">
+	<head>
+		<!-- links -->
+		<link rev="made" href="tr@tomasreichmann.cz"/>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="icon" type="image/gif" href="animated_favicon1.gif" />
+		
+		<!-- css links -->
+		<link href="/media/minesweeper/css/minesweeper-0.9.css" rel="stylesheet" type="text/css" media="all"/>
+		<link href="/media/minesweeper/css/style.css" rel="stylesheet" type="text/css" media="all"/>
+		
+		<!-- meta header -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<meta http-equiv="content-language" content="cs"/>
+		<meta http-equiv="content-style-type" content="text/css"/>
+		
+		<!-- meta info -->
+
+		<meta name="language" content="English"/>
+		<meta name="author" content="Tomáš Reichmann; http://www.tomasreichmann.cz; tr@tomasreichmann.cz"/>
+		<meta name="date" content="2010-12-09T14:05:00UTC+1" />
+		<meta name="copyright" content=" © 2010, Tomáš Reichmann, všechna práva vyhrazena"/>
+		<meta name="description" content="Minesweeper jQuery plugin example"/>
+
+		<script type="text/javascript" src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'></script>
+		<script type="text/javascript" src="/media/minesweeper/js/minesweeper-0.9.js"></script>
+		
+  <title>Minesweeper/Chanllenge test to Francisco Mosquera</title>
+
+		
+	</head>
+	
+	<body>
+		<div id="page-container">
+			<div id="page">
+<!-- * content * -->
+
+  	<div id="board"></div><!-- This is what the minesweeper board will be rendered into -->
+  	
+
+  	<p>I Francisco Mosquera , Take this library from Tomas Reichmann , this is only to my challange on Deviget.com.com</p>
+  	<p>
+
+
+            Copyright (c) 2011 Tomas Reichmann <br />
+			<a href="http://tomasreichmann.cz/" title="Tomáš Reichmann Portfolio &ndash; Webdesign | Graphic Design | Photography" >http://tomasreichmann.cz/</a>
+		</p>
+
+<!-- / content / -->		
+			</div>
+		</div>
+<script type="text/javascript" >//<![CDATA[
+$(document).ready(function()
+{
+
+    var CustomVarts = {'Username':'Juan'};
+	$("#board").minesweeper({"difficulty":"beginner",'CustomVars':CustomVarts});
+	
+
+});
+//]]></script>
+
+	</body>
+</html>

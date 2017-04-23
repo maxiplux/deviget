@@ -1,0 +1,24 @@
+{% extends "base_generic.html" %}
+<h1>{% block title %}Detail Order{% endblock %}</h1>
+{% block content %}
+
+    <h1>head Order Detail: {{ order.title }}</h1>
+
+  <p><strong>Author:</strong> <a href="">{{ book.author }}</a></p> <!-- author detail link not yet defined -->
+  <p><strong>Summary:</strong> {{ book.summary }}</p>
+  <p><strong>ISBN:</strong> {{ book.isbn }}</p>
+  <p><strong>Language:</strong> {{ book.language }}</p>
+  <p><strong>Genre:</strong> {% for genre in book.genre.all %} {{ genre }}{% if not forloop.last %}, {% endif %}{% endfor %}</p>
+
+  <div style="margin-left:20px;margin-top:20px">
+    <h4>Items</h4>
+
+    {% for item in order.line_items.all %}
+        <p class="text-muted"><strong>MEJORAME PLEASE Id: , PALANTE JAVERIANO </strong> {{item.id}}</p>
+    {% endfor %}
+  </div>
+
+
+
+
+{% endblock %}
