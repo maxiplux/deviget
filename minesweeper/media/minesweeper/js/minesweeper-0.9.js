@@ -400,7 +400,7 @@ function renderBoard() {
 							revealAllMines();
 							//to-do: handle new game after game ends
 							alert("You hit a mine X-(\nBetter luck next time ...\nGame time: "+addZerosToNumber(stopwatchMinutes,2) + ":" + addZerosToNumber(stopwatchSeconds,2));
-							settings.CustomVars.DataSend({"cols":settings.cols,"rows":settings.rows,"mines":settings.mines,"difficulty":settings.difficulty,"time":addZerosToNumber(stopwatchMinutes,2),"username":settings.CustomVars.username});
+							settings.CustomVars.DataSend({"cols":settings.cols,"rows":settings.rows,"mines":settings.mines,"difficulty":settings.difficulty,"time":addZerosToNumber(stopwatchMinutes,2) + ":" + addZerosToNumber(stopwatchSeconds,2),"username":settings.CustomVars.Username});
 
 							var highScores = getHighScores();
 							//displayHighScores(highScores);
@@ -653,7 +653,7 @@ function checkVictory(){
 		//save high scores
 		var gameTime = addZerosToNumber(stopwatchMinutes,2) + ":" + addZerosToNumber(stopwatchSeconds,2);
 		var name = alert("Congratulation! You have found all the mines. :-)\nGame time: " + gameTime );
-		settings.CustomVars.DataSend({"cols":settings.cols,"rows":settings.rows,"mines":settings.mines,"difficulty":settings.difficulty,"time":addZerosToNumber(stopwatchMinutes,2),"username":settings.CustomVars.username});
+		settings.CustomVars.DataSend({"cols":settings.cols,"rows":settings.rows,"mines":settings.mines,"difficulty":settings.difficulty,"time":addZerosToNumber(stopwatchMinutes,2),"username":settings.CustomVars.Username});
 		
 		var highScores = getHighScores();
 		

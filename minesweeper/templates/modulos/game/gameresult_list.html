@@ -1,4 +1,18 @@
- <table class="table table-condensed">
+<style>
+div.scroll
+{
+height:200PX;
+FLOAT: left;
+margin-left: 5%;
+padding: 1%;
+
+overflow:scroll;
+}
+
+
+</style>
+<div class="scroll">
+<table class="table table-condensed">
     <thead>
       <tr>
           <th>Id Game</th>
@@ -15,7 +29,7 @@
     <tbody>
 
     {% for game in object_list %}
-        <tr>
+        <tr class="success">
             <td>{{game.id}}</td>
             <td>{{game.creado}}</td>
             <td>{{game.cols}}</td>
@@ -28,3 +42,4 @@
     {% endfor %}
     </tbody>
   </table>
+</div>

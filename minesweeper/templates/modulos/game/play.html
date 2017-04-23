@@ -26,6 +26,7 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script type="text/javascript" src="/media/minesweeper/js/minesweeper-0.9.js"></script>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		
   <title>Minesweeper/Chanllenge test to Francisco Mosquera</title>
 
@@ -37,7 +38,10 @@
 			<div id="page">
 <!-- * content * -->
 
+
   	<div id="board"></div><!-- This is what the minesweeper board will be rendered into -->
+                <br/>
+                <div id="blackboard"></div><!-- This is what the minesweeper board will be rendered into -->
   	
 
   	<p>I Francisco Mosquera , Take this library from Tomas Reichmann , this is only to my challange on Deviget.com.com</p>
@@ -56,6 +60,7 @@
 function DataSend(data)
 {
 
+    $("#blackboard").hide("slow");
 data.token="{{ token }}";
 
 
@@ -65,13 +70,16 @@ jQuery.ajax({
   data: data
 }).done(function( msg )
  {
-      //g=eval(msg);
-     alert(msg);
+      msg=eval(msg);
+     alert("Game save with id "+msg.id);
+     $("#blackboard").load("/show-results/");
+     $("#blackboard").show("slow");
 
 
 
   })
 ;
+    $("#blackboard").show("slow");
 
 }
 $(document).ready(function()
@@ -79,6 +87,7 @@ $(document).ready(function()
 
     var CustomVarts = {'Username':"{{ username }}",'DataSend':DataSend,'Jquery':$};
 	$("#board").minesweeper({"difficulty":"beginner",'CustomVars':CustomVarts});
+    $("#blackboard").load("/show-results/");
 	
 
 });
