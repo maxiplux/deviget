@@ -1,1 +1,1 @@
-web: gunicorn webstore.wsgi
+web: gunicorn minesweeper.wsgi
